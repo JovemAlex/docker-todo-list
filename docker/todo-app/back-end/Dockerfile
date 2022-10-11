@@ -6,7 +6,7 @@ COPY ["package.json", "package-lock.json", "./"]
 RUN npm install
 
 
-COPY ["src", "./src"] dest
+COPY ["src", "./src"]
 ADD ["node_modules.tar.gz", "./"]
 
 ENTRYPOINT [ "npm", "start" ]
